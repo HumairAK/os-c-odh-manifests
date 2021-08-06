@@ -28,6 +28,8 @@ spec:
         envFrom:
           - secretRef:
               name: superset
+          - secretRef:
+              name: superset-oidc
         image: $(SUPERSET_IMAGE)
         imagePullPolicy: Always
         ports:

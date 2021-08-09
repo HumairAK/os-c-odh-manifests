@@ -32,6 +32,11 @@ spec:
                 path: log.properties
               - key: node.properties
                 path: node.properties
+              # For cloudbeaver connection, as oauth is not supported
+              - key: password-authenticator.properties
+                path: password-authenticator.properties
+              - key: password.db
+                path: password.db
         - name: trino-catalogs-volume
           secret:
             secretName: trino-catalog
